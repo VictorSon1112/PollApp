@@ -1,0 +1,64 @@
+$primary-color: #1890ff;
+$avatar-size: 50px;
+$button-width: 80%;
+$button-margin: 20px;
+
+.detail-page {
+    user-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .avatar {
+            width: $avatar-size;
+            height: $avatar-size;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .user-details {
+            font-weight: bold;
+
+            .username {
+                font-size: 18px;
+            }
+
+            .handle {
+                font-size: 14px;
+                color: gray;
+            }
+        }
+    }
+
+    .option-title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .option-button {
+        width: $button-width;
+        margin-bottom: $button-margin;
+
+        &:last-child {
+            margin-bottom: 0;
+            margin-top: $button-margin;
+        }
+    }
+
+    .item-vote {
+        background-color: rgb(155, 159, 236);
+        padding: 20px;
+        border-radius: 20px;
+        width: 100%;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
